@@ -1,0 +1,146 @@
+.car-showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.car-images {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+
+
+
+.car-details {
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.car-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.car-info {
+    margin-bottom: 1rem;
+}
+
+.car-extra {
+    display: flex;
+    align-items: center;
+}
+
+.car-extra-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.car-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+.carousel {
+    position: relative;
+    width: 860px; /* Set the fixed width */
+    height: 540px; /* Set the fixed height */
+    margin: auto;
+    overflow: hidden;
+    background-color: #ffffff; /* Set the background color to black */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel-inner {
+    text-align: center;
+    position: relative;
+    width: auto; /* Set width to auto */
+    height: auto; /* Set height to auto */
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center; /* Center items vertically */
+  }
+  
+  .carousel-item {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color as needed */
+    color: #fff;
+    opacity: 0.1;
+    transition: opacity 0.3s;
+  }
+  
+  .carousel-control-prev {
+    left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+  }
+  
+  .carousel-control-next {
+    right: 0;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .counter {
+    color: #fff; /* Set the font color to white */
+  }
+
+  
+  .car-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.car-image.enlarged {
+  width: 60%; /* Adjust the width as per your preference */
+  height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
