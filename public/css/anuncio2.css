@@ -1,0 +1,26 @@
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .checkbox-grid > div {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-grid input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .checkbox-grid label {
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
