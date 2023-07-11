@@ -112,6 +112,15 @@ class Dashboard extends Controller
         $param = $request->except('mergedParams');
         $param = array_merge($param, $mergedParams);
 
+        // Set the default value (e.g., false) for unchecked checkboxes
+        $checkboxes = ['brand','model','year','price','mileage','fuelType','color','numberDoors','capacity','transmission','engineCapacity','horsePower','VIN','matricula','segmento','state','warranty','ABS','AjudaAoParqueamento','AlertaTransposicaoDeLinha','AvisoDeAnguloMorto','AvisoSinaldeTransito','CruiseControl','EDSBloqueioEletronicoDoDiferencial','FechoAutomaticoPortasAndamento','FechoCentralizadoComComandoDistancia','ISOFIX','SensoresChuva','SistemaChaveIntelegente','TCSSistemaDeControloDeTracao','airbags','AirbagDeCondutor','AlertaDeColisao-TravagemDeEmergencia','AssistenteFaixadeRodagem','AvisoDeVelocidade','BotaoStart','DirecaoAssistida','ESP','FechoCentral','Imobilizador','SensorDeEstacionamentoTraseiro','SensoresDeLuzes','SistemaDeControloPressaoDosPneus','TravaoDeMaoEletrico','ApoioDeBraço','BancosDianteirosComRegulacaoEletrica','ControloPorVoz','NaoFumador','VolanteDesportivo','EstofosEmPele','VolanteRegulavelEmAlturaEProfundidade','BancosDianteirosAquecidos','BancosRebativeis','EncostosDeCabeçaTraseiros','VolanteComComandosDeRadio','VolanteMultifuncoes','VolanteEmPele','BarrasDeTejadilho','FaroisDirecionais','FaroisDiurnosEmLed','FuncaoLuzesComingAndLeavingHome','LuzesTraseirasLED','RetrovisoresAquecidos','RetrovisoresComRegulacaoEletrica','TecnologiaLED','VidrosEletricosDianteirosETraseiros','FaroisDeNevoeiro','FaroisDiurnos','FaroisRegulaveisEmAltura','TipoJantes','RetrovisoresAntiEncadeamento','RetrovidoresRebativeisEletricos','JantesSize','ACBancosTraseiros','AppleCarPlay','ComputadorDeBordo','EcraTatilOuTouchScreen','EntradaUSB','SistemaDeEntradaSemChave','Auto-Radio','AndroidAuto','Bluetooth','EasyOpenEasyClose','EntradaAUX','GPS','ArCondicionadoAutomatico'];
+
+        foreach ($checkboxes as $checkbox) {
+            if (!isset($param[$checkbox])) {
+                $param[$checkbox] = false;
+            }
+        }
+
         // Retrieve the car record from the database using the $id parameter
         $car = Car::find($id);
 

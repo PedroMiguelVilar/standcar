@@ -9,7 +9,7 @@
                             <form method="POST" action="{{ route('Anuncio3') }}">
                                 @csrf
                                 <input type="hidden" name="mergedParams" value="{{ $mergedParams }}">
-                                <div style="text-align:center">Securança e Desempenho</div>
+                                <div style="text-align:center">Segurança e Desempenho</div>
                                 <br>
                                 <fieldset>
                                     <div class="checkbox-grid">
@@ -135,12 +135,6 @@
                                                 Pneus</label>
                                         </div>
 
-                                        <div>
-                                            <input type="checkbox" id="SistemaDeControloDePressaoDosPneus"
-                                                name="SistemaDeControloDePressaoDosPneus" unchecked>
-                                            <label for="SistemaDeControloDePressaoDosPneus">Sistema de Controlo de Pressao
-                                                dos Pneus</label>
-                                        </div>
                                         <div>
                                             <input type="checkbox" id="TravaoDeMaoEletrico" name="TravaoDeMaoEletrico"
                                                 unchecked>

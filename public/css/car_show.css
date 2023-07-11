@@ -60,6 +60,7 @@
     position: relative;
 }
 
+
 .car-row::after {
     content: "";
     position: absolute;
@@ -69,6 +70,24 @@
     height: 1px;
     background-color: #e2e2e3;
 }
+
+.car-row-details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.car-row-details::after {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 105%;
+    height: 1px;
+    background-color: #e2e2e3;
+}
+
 
 .car-label {
     width: 150px; /* Increase the width to accommodate the longer label */
@@ -81,7 +100,7 @@
 
 .car-value {
     flex-grow: 1;
-    margin-left: 10rem; /* Add a margin on the left side */
+    margin-left: 8rem; /* Add a margin on the left side */
 }
 
 
@@ -235,4 +254,21 @@
 .thumbnail-image:hover,
 .thumbnail-item.active .thumbnail-image {
   opacity: 1; /* Hover and active opacity */
+}
+
+.car-details-sections {
+    display: flex;
+    justify-content: center;
+}
+
+.car-details-section {
+    margin: 0 10px; /* Adjust the margin as needed for spacing between sections */
+    text-align: center;
+}
+
+.car-attributes {
+    /* ... Your existing styles for the car attributes ... */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

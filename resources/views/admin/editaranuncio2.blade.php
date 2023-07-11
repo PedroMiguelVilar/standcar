@@ -9,7 +9,7 @@
                             <form method="POST" action="{{ route('cars.edit3', ['id' => $car->id]) }}">
                                 @csrf
                                 <input type="hidden" name="mergedParams" value="{{ $mergedParams }}">
-                                <div style="text-align:center">Securança e Desempenho</div>
+                                <div style="text-align:center">Segurança e Desempenho</div>
                                 <br>
                                 <fieldset>
                                     <div class="checkbox-grid">
@@ -136,12 +136,6 @@
                                                 Pneus</label>
                                         </div>
 
-                                        <div>
-                                            <input type="checkbox" id="SistemaDeControloDePressaoDosPneus"
-                                                name="SistemaDeControloDePressaoDosPneus" {{ $car->SistemaDeControloDePressaoDosPneus ? 'checked' : '' }}>
-                                            <label for="SistemaDeControloDePressaoDosPneus">Sistema de Controlo de Pressao
-                                                dos Pneus</label>
-                                        </div>
                                         <div>
                                             <input type="checkbox" id="TravaoDeMaoEletrico" name="TravaoDeMaoEletrico"
                                             {{ $car->TravaoDeMaoEletrico ? 'checked' : '' }}>
