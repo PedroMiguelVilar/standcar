@@ -272,3 +272,113 @@
     flex-direction: column;
     align-items: center;
 }
+
+
+/* Adjust styles for screens with a maximum width of 767px (common mobile size) */
+@media (max-width: 767px) {
+    .car-showcase {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .car-images {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    
+    .car-details {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    .thumbnail-carousel {
+      margin-left: 0;
+      margin-top: 1rem;
+    }
+    
+    .car-label {
+      width: 120px;
+    }
+    
+    .car-value {
+      margin-left: 5px;
+    }
+    
+    .car-row::after {
+      display: none;
+    }
+    
+    .car-row-details::after {
+      display: none;
+    }
+    
+    .car-details-container {
+      margin-left: 0;
+    }
+    
+    .car-title {
+      position: static;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      left: auto;
+      right: auto;
+      text-align: center;
+    }
+    
+    .carousel {
+      width: 100%;
+      height: auto;
+    }
+    
+    .carousel-item {
+      height: auto;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: auto;
+      transform: none;
+      width: 30px;
+      height: 30px;
+      font-size: 12px;
+    }
+    
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 12px;
+      height: 12px;
+    }
+    
+    .thumbnail-carousel {
+        display: flex;
+        flex-direction: row; /* Change the direction to horizontal */
+        overflow: auto; /* Allow horizontal scrolling */
+        height: auto;
+        margin-left: 0;
+        margin-top: 1rem;
+        white-space: nowrap;
+        scrollbar-width: thin; /* Adjust the scrollbar width as needed */
+      }
+      
+      .thumbnail-item {
+        margin-bottom: 0;
+        margin-right: 10px; /* Add some spacing between thumbnails */
+        display: inline-block;
+      }
+
+    .car-details-sections {
+        display: flex;
+        flex-wrap: wrap; /* Allow the sections to wrap on smaller screens */
+        justify-content: center;
+        gap: 20px; /* Add some spacing between sections */
+    }
+    
+    .car-details-section {
+        flex-basis: 100%; /* Make each section take the full width on smaller screens */
+        max-width: 400px; /* Set a maximum width to control the size of the sections */
+        margin-bottom: 20px; /* Add some spacing between sections */
+        text-align: center;
+    }
+    
+  }
+  
