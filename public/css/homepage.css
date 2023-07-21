@@ -1,61 +1,61 @@
 .car-showcase {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .car-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px; /* Increase the gap value to add more space between cards */
-  justify-items: center;
-  width: 100%;
-  max-width: 1200px; /* Adjust the max-width as needed */
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px; /* Increase the gap value to add more space between cards */
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    margin: 0 auto;
 }
 
 .car-card {
-  background-color: #f2f2f2;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  text-align: center;
-  width: 100%;
-  max-width: 100%; /* Increase the max-width value to make the cards larger */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 30px;
-  margin-bottom: 30px;
-  border-radius: 20px;
-  gap: 20px;
-  text-decoration: none; /* Remove underline from the anchor */
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 100%; /* Increase the max-width value to make the cards larger */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    gap: 20px;
+    text-decoration: none; /* Remove underline from the anchor */
 }
 
 .car-card a {
-  display: block;
-  color: inherit;
-  text-decoration: none;
+    display: block;
+    color: inherit;
+    text-decoration: none;
 }
 
 .car-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .car-title {
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .car-model {
-  font-style: italic;
-  margin-bottom: 10px;
+    font-style: italic;
+    margin-bottom: 10px;
 }
 
 .car-extra {
-  align-items: center;
-  margin-top: 10px;
-  margin-right: 0px; /* Increase the margin-right value to add more spacing */
-  white-space: nowrap; /* Prevent line breaks within the extra information */
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 0px; /* Increase the margin-right value to add more spacing */
+    white-space: nowrap; /* Prevent line breaks within the extra information */
 }
 
 .car-extra-icon {
@@ -65,148 +65,224 @@
 .car-mileage,
 .car-publication,
 .car-fuel {
-  margin-bottom: 5px;
-  margin-right: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
-
 .car-price {
-  font-size: 18px;
-  font-weight: bold;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .carousel-item {
-  height: 200px; /* Adjust this value as needed */
-  justify-content: center;
-  align-items: center;
+    height: 200px; /* Adjust this value as needed */
+    justify-content: center;
+    align-items: center;
 
-  background-color: #f2f2f2; /* or any other color you prefer */
+    background-color: #f2f2f2; /* or any other color you prefer */
 }
 
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%; /* Set the height of the container to 100% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Set the height of the container to 100% */
 }
 
 .image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  background-color: #f2f2f2; /* Add background color to the image */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    background-color: #f2f2f2; /* Add background color to the image */
 }
 
-
 .wrapper {
-  width: 100%;
-  max-width: 31.25rem;
-  margin: 6rem auto;
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 6rem auto;
 }
 
 .label {
-  font-size: 0.625rem;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.3px;
-  margin-bottom: 1rem;
+    font-size: 0.625rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    margin-bottom: 1rem;
 }
 
 .searchBar {
-  position: relative;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
 }
 
 #searchQueryInput {
-  flex: 1;
-  height: 2.8rem;
-  background: #f5f5f5;
-  outline: none;
-  border: none;
-  border-radius: 1.625rem;
-  padding: 0 3.5rem 0 1.5rem;
-  font-size: 1rem;
+    flex: 1;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 3.5rem 0 1.5rem;
+    font-size: 1rem;
 }
 
 #searchQuerySubmit {
-  width: 3.5rem;
-  height: 2.8rem;
-  margin-left: -3.5rem;
-  background: none;
-  border: none;
-  outline: none;
+    width: 3.5rem;
+    height: 2.8rem;
+    margin-left: -3.5rem;
+    background: none;
+    border: none;
+    outline: none;
 }
 
 #searchQuerySubmit:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 #suggestionsDropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 9999;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
-  display: none; /* Hide the dropdown by default */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    display: none; /* Hide the dropdown by default */
 }
 
 .dropdown-item {
-  cursor: pointer;
-  padding: 5px;
+    cursor: pointer;
+    padding: 5px;
 }
 
 .dropdown-item:hover {
-  background-color: #e9e9e9;
+    background-color: #e9e9e9;
 }
 
 .input-group-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
 .search-input {
-  display: flex;
-  align-items: center;
-  margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .search-input input {
-  flex: 1;
-  height: 2.8rem;
-  background: #f5f5f5;
-  outline: none;
-  border: none;
-  border-radius: 1.625rem;
-  padding: 0 1.5rem 0 1.5rem;
-  font-size: 1rem;
+    flex: 1;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 1.5rem 0 1.5rem;
+    font-size: 1rem;
 }
 
 .range-input {
-  display: flex;
-  gap: 5px;
+    display: flex;
+    gap: 5px;
 }
 
 .range-input input {
-  flex: 1;
-  height: 2.8rem;
-  background: #f5f5f5;
-  outline: none;
-  border: none;
-  border-radius: 1.625rem;
-  padding: 0 1rem;
-  font-size: 1rem;
+    flex: 1;
+    height: 2.8rem;
+    background: #f5f5f5;
+    outline: none;
+    border: none;
+    border-radius: 1.625rem;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+
+.filters {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease; /* Shorten the transition time to 0.2 seconds */
+}
+
+.filters.show {
+    max-height: 400px;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+.expand-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px; /* Optional, adjust as needed */
+}
+
+.filters-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Add custom styles for the footer layout */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px; /* Adjust the padding as needed */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-item .icon {
+    width: 30px;
+    height: auto;
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-weight: bold;
+}
+
+.location,
+.phone,
+.email {
+    margin: 0;
+}
+
+/* Add margin to the footer for spacing from the bottom of the page */
+#custom-footer {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+    margin-top: 50px; /* Adjust the margin as needed */
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+
+#map {
+  height: 300px; /* Adjust the height as needed */
+  width: 1000px;
+  margin: 100px auto; /* Add margin to center the map horizontally and create spacing from other content */
+  position: relative;
+  z-index: 0;
 }
 
