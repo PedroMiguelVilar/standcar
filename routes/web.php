@@ -26,7 +26,7 @@ Route::get('/cars/{id}', [CarController::class, 'show'])->name('car');
 
 Auth::routes(['verify' => true]);
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['admin'])->group(function () {
 
     Route::get('/CriarAnuncio', [CarController::class, 'ShowForm'])->name('Anuncio1');
     Route::post('/SecurityAndPerfomance', [CarController::class, 'SecurityAndPerfomance'])->name('Anuncio2');
