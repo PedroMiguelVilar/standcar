@@ -73,7 +73,7 @@ class SearchController extends Controller
     public function suggest(Request $request)
     {
         $query = $request->input('query');
-        $suggestedTerms = Car::where('brand', 'LIKE', "%{$query}%")
+        $suggestedTerms = Car::where('brand', 'ILIKE', "%{$query}%")
             ->limit(5) // Limit the number of suggested terms
             ->pluck('brand'); // Replace 'column_name' with the actual column to suggest from
 

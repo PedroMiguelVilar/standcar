@@ -81,7 +81,23 @@
                                     <span class="car-extra-icon">●</span>
                                     <span class="car-publication">{{ $result->year }}</span>
                                     <span class="car-extra-icon">●</span>
-                                    <span class="car-fuel">{{ $result->fuelType }}</span>
+                                    @switch($result->fuelType)
+                                        @case('Gasoline')
+                                            <span class="car-fuel">Gasolina</span>
+                                        @break
+
+                                        @case('Diesel')
+                                            <span class="car-fuel">Gasóleo</span>
+                                        @break
+
+                                        @case('Hybrid')
+                                            <span class="car-fuel">Híbrido</span>
+                                        @break
+
+                                        @case('Electric')
+                                            <span class="car-fuel">Elétrico</span>
+                                        @break
+                                    @endswitch
                                 </div>
                             </div>
                             <div class="car-price">{{ $result->price }}€</div>
@@ -179,7 +195,6 @@
         }
     </script>
 
-    
-    @include('layouts.footer')
 
+    @include('layouts.footer')
 @endsection
