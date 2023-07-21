@@ -50,7 +50,7 @@
 
 
 
-    <div class="car-showcase">
+    <div id="car-showcase" class="car-showcase">
         <div class="car-grid">
             @foreach ($results as $result)
                 <div class="car-card">

@@ -34,7 +34,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    <img src="{{ asset('logo.png') }}" alt="Logo" style="width: 150px; height: auto;">
+                    <img src="{{ asset('logoalt.png') }}" alt="Logo" style="width: 150px; height: auto;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -50,6 +50,11 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#car-showcase">Viaturas</a>
+                        </li>
+                        
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))

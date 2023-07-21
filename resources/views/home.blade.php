@@ -48,7 +48,7 @@
         </form>
     </div>
 
-    <div class="car-showcase">
+    <div id="car-showcase" class="car-showcase">
         <div class="car-grid">
             @foreach ($cars as $car)
                 <div class="car-card">
